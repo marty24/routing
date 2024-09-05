@@ -33,7 +33,7 @@ public class RoutingService {
 
         while (!queue.isEmpty()) {
             List<String> path = queue.poll();
-            String lastCountryCode = path.get(path.size() - 1);
+            String lastCountryCode = path.getLast();
             Country lastCountry = countryService.getCountryByCca3(lastCountryCode);
 
             for (String neighbor : lastCountry.getBorders()) {
