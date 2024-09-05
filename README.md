@@ -2,8 +2,7 @@
 REST application for routing service.
 
 Minimum prerequisites: 
-installed Java 21
-installed maven
+installed Java 21 and maven
 
 Build the application:
 mvn clean install
